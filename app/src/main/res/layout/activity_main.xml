@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="115dp"
+                app:srcCompat="@drawable/icon_user" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#673AB7"
+                android:drawableLeft="@drawable/icon_email"
+                android:ems="10"
+                android:hint="Correo"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="15dp" />
+
+            <EditText
+                android:id="@id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:drawableLeft="@drawable/icon_lock"
+                android:hint="Contraseña"
+                android:inputType="textPassword
+"
+                android:paddingLeft="15dp" />
+
+            <LinearLayout
+                android:id="@+id/txtButton"
+                android:layout_width="331dp"
+                android:layout_height="136dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="157dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#53FFB7"
+                    android:text="Ingresar"
+                    android:textColor="#FFF"
+                    android:textSize="18sp">
+
+                </Button>
+
+                <LinearLayout
+                    android:layout_width="21dp"
+                    android:layout_height="match_parent" />
+                |
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#53FFB7"
+                    android:text="Cerrar"
+                    android:textColor="#FFF"
+                    android:textSize="18sp">
+
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
